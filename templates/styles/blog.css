@@ -117,10 +117,15 @@ nav {
         transform: translate(-5%, -50%);
         z-index: 5;
     }
+    .burger.open {
+        background: #fff;
+        border-radius: 7px;
+    }
     .nav-links {
         position: fixed;
         height: 100vh;
         width: 100%;
+        display: flex;
         flex-direction: column;
         clip-path: circle(100px at 90% -10%);
         -webkit-clip-path: circle(100px at 90% -10%);
@@ -151,7 +156,7 @@ nav {
         padding: 7px 30px;
         border-radius: 30px;
         border: none;
-        margin-top: 2em;
+        margin: 2em 0;
     }
     .sign-up-btn a {
         color: #0f7bff;

@@ -871,6 +871,10 @@ footer {
         transform: translate(-5%, -50%);
         z-index: 5;
     }
+    .burger.open {
+        background: #fff;
+        border-radius: 7px;
+    }
     .nav-links {
         position: fixed;
         height: 100vh;
@@ -895,6 +899,18 @@ footer {
         color: #fff;
         font-size: 2em;
         font-weight: 700;
+    }
+    .link a {
+        color: #fff;
+        font-size: 2em;
+        font-weight: 700;
+        transition: all .3s ease-in-out;
+    }
+    .link a:hover {
+        color: #fff;
+        font-size: 2em;
+        font-weight: 700;
+        transform: scale(1.1);
     }
     li.fade {
         opacity: 1;
