@@ -1,0 +1,19 @@
+<svg id="Title" xmlns="http://www.w3.org/2000/svg" width="107.657" height="74" viewBox="0 0 107.657 74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #edf5ff;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #ebf9ff;
+      }
+    </style>
+  </defs>
+  <path id="_1" data-name="1" class="cls-1" d="M910.491,3046.83l34.679-36.02a15,15,0,0,1,21.611,20.81L932.1,3067.64A15,15,0,0,1,910.491,3046.83Z" transform="translate(-906.313 -2998.22)"/>
+  <path id="_2" data-name="2" class="cls-2" d="M953.491,3038.83l34.679-36.02a15,15,0,0,1,21.61,20.81L975.1,3059.64A15,15,0,0,1,953.491,3038.83Z" transform="translate(-906.313 -2998.22)"/>
+</svg>
