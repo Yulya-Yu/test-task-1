@@ -570,6 +570,107 @@ button[type=submit] {
 }
 
 
+/* LOGIN PAGE */
+
+.forms-header {
+    height: 10vh;
+}
+
+.login-form {
+    width: 50%;
+    margin: 5% auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.login-header h3 {
+    color: #333333;
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.login-header p {
+    color: #929292;
+    font-size: 0.9em;
+    margin-bottom: 2em;
+}
+
+.facebook-btn {
+    margin-right: 1em;
+    background-color: #3b5999;
+}
+
+.twitter-btn {
+    background-color: #55acee;
+}
+
+.facebook-btn,
+.twitter-btn {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1em;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-email,
+#password,
+#signup-name {
+    border: 1px solid #dedede;
+    border-radius: 0;
+}
+
+#login-email,
+#password,
+#signup-name {
+    width: 46%;
+    margin-bottom: 1em;
+    height: 40px;
+}
+
+.alt-links,
+.alt-sign-up-link {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+}
+
+.alt-links a,
+.alt-sign-up-link a {
+    text-decoration: none;
+    font-size: 0.7em;
+    color: #0f7bff;
+}
+
+.alt-sign-up-link p {
+    font-size: 0.7em;
+    color: #929292;
+    margin-right: 1em;
+}
+
+.password-link {
+    margin-right: 5em;
+}
+
+.alt {
+    color: #333333;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+
 /* WHOLE FOOTER */
 
 footer {
@@ -937,6 +1038,17 @@ footer {
         width: 96%;
         min-height: 100px;
         margin-bottom: 1em;
+    }
+    /* LOGIN-PAGE */
+    #login-email,
+    #password,
+    #signup-name {
+        width: 100%;
+        margin-bottom: 1em;
+        height: 40px;
+    }
+    .facebook-btn {
+        margin-right: 0;
     }
     /* FOOTER */
     .footer-top {
