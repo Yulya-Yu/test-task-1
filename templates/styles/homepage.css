@@ -124,11 +124,11 @@
         }
         
         .mouse img {
-            z-index: 10;
-            position: absolute;
+            z-index: 100;
+            position: relative;
             width: 40px;
             height: auto;
-            top: 98%;
+            margin-top: 23em;
         }
         
         .main-button,
@@ -520,7 +520,7 @@
         .button-right {
             border-radius: 0 20px 20px 0;
         }
-        
+        /*
         input[type="radio"].toggle {
             display: none;
         }
@@ -571,6 +571,53 @@
         
         input[type="radio"].toggle:checked+label:after {
             left: 0;
+        }
+        */
+        
+        label {
+            display: block;
+            left: 0px;
+            top: 0;
+            position: relative;
+            width: 300px;
+            height: 40px;
+            z-index: 10;
+            line-height: 40px;
+            font-weight: bold;
+            border-radius: 20px;
+            border: 3px solid #0f7bff;
+            transition: all 600ms ease;
+            cursor: pointer;
+        }
+        
+        label:after {
+            content: "Monthly";
+            color: #fff;
+            width: 150px;
+            height: 34px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            display: block;
+            border-radius: 20px 0 0 20px;
+            background: #0f7bff;
+            transition: all 600ms ease;
+            cursor: pointer;
+        }
+        
+        #checkbox {
+            display: none;
+        }
+        
+         :checked+label {
+            left: 0px;
+        }
+        
+         :checked+label:after {
+            left: 144px;
+            background: #0f7bff;
+            content: "Yearly";
+            border-radius: 0 20px 20px 0;
         }
         /* SECTION 6 */
         
@@ -978,13 +1025,15 @@
             }
             /* SECTION 3 */
             .section3 {
-                width: 90%;
-                margin: 5% 0;
+                width: 100%;
+                margin: 0;
+                height: auto;
+                background-color: #0f7bff;
             }
             .rectangle1,
             .rectangle2 {
                 width: 200px;
-                margin: 0 auto;
+                height: auto;
             }
             .photos1,
             .photos2 {
@@ -992,7 +1041,8 @@
             }
             .container1,
             .container2 {
-                width: 80%;
+                width: 70%;
+                margin: 0 auto;
             }
             .container1-info,
             .container2-info {
@@ -1006,20 +1056,32 @@
             .pricing-info h3 {
                 font-size: 1.1em;
                 text-align: center;
-                background-color: #fff;
+                font-weight: 700;
+                color: #fff;
             }
             .container1-info p,
             .container2-info p,
             .pricing-info p {
                 text-align: center;
-                background-color: #fff;
                 padding: 2px 5px;
                 margin: -5px -5px;
                 line-height: 1.7;
                 border-radius: 7px;
                 display: inline;
+                font-weight: 700;
+                color: #fff;
             }
-            .read-more-btn,
+            .read-more-btn {
+                border: none;
+                background: #fff;
+                padding: 5px 10px;
+                margin-left: 2%;
+                border-radius: 7px;
+                transition: all 0.4s ease 0s;
+            }
+            .read-more-btn:hover {
+                transform: scale(1.1);
+            }
             .continue-btn {
                 border: 1px solid #0f7bff;
                 border: none;
@@ -1063,8 +1125,19 @@
             .pricing-info {
                 width: 80%;
                 margin: 5% auto;
-                align-self: center;
+                align-items: center;
                 text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
+            .pricing-info h3 {
+                color: #333333;
+            }
+            .pricing-info p {
+                color: #929292;
+                font-weight: 400;
+                text-align: center;
+                margin-bottom: 1em;
             }
             .pricing-cards {
                 width: 80%;
