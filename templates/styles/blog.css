@@ -564,12 +564,8 @@ button[type=submit] {
     margin-bottom: 1em;
 }
 
-textarea::placeholder {
-    padding: 1em;
-}
-
 textarea {
-    padding-left: 1em;
+    padding: 1em;
 }
 
 .submit-form {

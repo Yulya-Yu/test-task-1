@@ -312,7 +312,6 @@
             transition: all 0.4s ease 0s;
         }
         
-        .read-more-btn:hover,
         .continue-btn:hover {
             border: 1px solid #0f7bff;
             border-radius: 7px;
@@ -322,6 +321,13 @@
             -webkit-box-shadow: 0 5px 40px -10px rgba(15, 123, 255, 0.4);
             -moz-box-shadow: 0 5px 40px -10px rgba(15, 123, 255, 0.4);
             box-shadow: 5px 40px -10px rgba(15, 123, 255, 0.4);
+        }
+        
+        .read-more-btn:hover {
+            border-radius: 7px;
+            background: #fff;
+            letter-spacing: 1px;
+            padding: 8px 15px;
         }
         
         .fa-arrow-right {
@@ -520,7 +526,7 @@
         .button-right {
             border-radius: 0 20px 20px 0;
         }
-        /*
+        
         input[type="radio"].toggle {
             display: none;
         }
@@ -528,23 +534,7 @@
         input[type="radio"].toggle+label {
             cursor: pointer;
             min-width: 150px;
-        }
-        
-        input[type="radio"].toggle+label:hover {
-            background: none;
-            color: #0f7bff;
-        }
-        
-        input[type="radio"].toggle+label:after {
-            background: #0f7bff;
-            content: "";
-            height: 100%;
-            position: absolute;
-            top: 0;
-            transition: left 200ms;
-            border-radius: 20px 0 0 20px;
-            width: 100%;
-            z-index: -1;
+            overflow: hidden;
         }
         
         input[type="radio"].toggle.left+label {
@@ -553,6 +543,14 @@
         
         input[type="radio"].toggle.left+label:after {
             left: 100%;
+            background: #0f7bff;
+            content: "";
+            height: 100%;
+            position: absolute;
+            top: 0;
+            transition: left 200ms;
+            width: 100%;
+            z-index: -1;
         }
         
         input[type="radio"].toggle.right+label {
@@ -561,6 +559,14 @@
         
         input[type="radio"].toggle.right+label:after {
             left: -100%;
+            background: #0f7bff;
+            content: "";
+            height: 100%;
+            position: absolute;
+            top: 0;
+            transition: left 200ms;
+            width: 100%;
+            z-index: -1;
         }
         
         input[type="radio"].toggle:checked+label {
@@ -571,53 +577,6 @@
         
         input[type="radio"].toggle:checked+label:after {
             left: 0;
-        }
-        */
-        
-        label {
-            display: block;
-            left: 0px;
-            top: 0;
-            position: relative;
-            width: 300px;
-            height: 40px;
-            z-index: 10;
-            line-height: 40px;
-            font-weight: bold;
-            border-radius: 20px;
-            border: 3px solid #0f7bff;
-            transition: all 600ms ease;
-            cursor: pointer;
-        }
-        
-        label:after {
-            content: "Monthly";
-            color: #fff;
-            width: 150px;
-            height: 34px;
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            display: block;
-            border-radius: 20px 0 0 20px;
-            background: #0f7bff;
-            transition: all 600ms ease;
-            cursor: pointer;
-        }
-        
-        #checkbox {
-            display: none;
-        }
-        
-         :checked+label {
-            left: 0px;
-        }
-        
-         :checked+label:after {
-            left: 144px;
-            background: #0f7bff;
-            content: "Yearly";
-            border-radius: 0 20px 20px 0;
         }
         /* SECTION 6 */
         
@@ -1081,6 +1040,7 @@
             }
             .read-more-btn:hover {
                 transform: scale(1.1);
+                background: #fff;
             }
             .continue-btn {
                 border: 1px solid #0f7bff;
