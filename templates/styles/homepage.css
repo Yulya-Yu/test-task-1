@@ -1287,6 +1287,14 @@
             hr {
                 margin-top: 8.5%;
             }
+            /* SECTION 5 */
+            .button-left,
+            .button-right {
+                padding: 7px 30px;
+            }
+            input[type="radio"].toggle+label {
+                min-width: 100px;
+            }
             /* SECTION 6 */
             .review-list img {
                 width: 300px;
